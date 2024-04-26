@@ -1,0 +1,54 @@
+#compte_a_rebours {
+    font-family: Arial;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .prefixe {
+    font-weight: bold;
+  }
+
+  .block, .nb {
+    display: inline-block;
+  }
+
+  .block {
+    width: 20vw;
+    border-right: solid 1px black;
+  }
+
+  .block:nth-child(6) {
+    border-right: solid 1px transparent;
+  }
+
+  .nb {
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 650px) {
+    #compte_a_rebours {
+        width: 90vw;
+      }
+      .nb {
+        font-size: 4em;
+      }
+      .block {
+        width: 25vw;
+      }
+    
+}
+@media screen and (max-width: 500px) {
+
+      .nb {
+        font-size: 3em;
+      }
+      
+    
+}
