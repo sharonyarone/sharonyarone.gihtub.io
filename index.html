@@ -169,7 +169,7 @@
           </div>
           <div class="row">
           
-            <div class=" wp9 animated fadeInRight">
+            <div class=" wp9 animated fadeInUp">
               <p>
                 Notre histoire a débuté il y a bien des années, dans les couloirs
                 animés du lycée. C'est là que nos chemins se sont croisés pour la
@@ -184,11 +184,12 @@
             </div>
           </div>
         </div>
-        <div id="compte_a_rebours"><noscript>Début de l'évènement le 6 Septembre 2024.</noscript></div>
+        
       </section>
    
 
     <section class="events section-padding" id="events">
+        <div id="compte_a_rebours" class="wp8 animated fadeInLeft"><noscript>Début de l'évènement le 6 Septembre 2024.</noscript></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -394,18 +395,7 @@
             </p>
             <form id="rsvp-form" class="rsvp-form" action="" method="POST">
               <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="form-input-group">
-                    <i class="fa fa-envelope"></i
-                    ><input
-                      type="email"
-                      name="email"
-                      class=""
-                      placeholder="Your email"
-                      required
-                    />
-                  </div>
-                </div>
+                
                 <div class="col-md-6 col-sm-6">
                   <div class="form-input-group">
                     <i class="fa fa-user"></i
@@ -416,37 +406,79 @@
                       required
                     />
                   </div>
+                  
                 </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        name="name"
+                        class=""
+                        placeholder="Ton prénom"
+                        required
+                      />
+                    </div>
+                  </div>
               </div>
               <div class="row">
+                
                 <div class="col-md-6 col-sm-6">
-                  <div class="form-input-group">
-                    <i class="fa fa-users"></i
-                    ><input
-                      type="number"
-                      name="extras"
-                      class=""
-                      min="0"
-                      max="4"
-                      placeholder="Husband/Wife or kids"
-                      required
-                    />
+                    <div class="form-input-group">
+                      <i class="fa fa-envelope"></i
+                      ><input
+                        type="email"
+                        name="email"
+                        class=""
+                        placeholder="Your email"
+                        required
+                      />
+                    </div>
                   </div>
-                </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-users"></i
+                      ><input
+                        type="number"
+                        name="extras"
+                        class=""
+                        min="0"
+                        max="4"
+                        placeholder="Husband/Wife or kids"
+                        required
+                      />
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                
                 <div class="col-md-6 col-sm-6">
-                  <div class="form-input-group">
-                    <i class="fa fa-key"></i
-                    ><input
-                      type="number"
-                      name="invite_code"
-                      id="invite_code"
-                      class=""
-                      min="0"
-                      placeholder="Invite code"
-                      required
-                    />
+                    <div class="form-input-group">
+                      <i class="fa fa-users"></i
+                      ><input
+                        type="number"
+                        name="extras"
+                        class=""
+                        min="0"
+                        max="4"
+                        placeholder="Combien d'adultes ?"
+                        required
+                      />
+                    </div>
                   </div>
-                </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-users"></i
+                      ><input
+                        type="number"
+                        name="extras"
+                        class=""
+                        min="0"
+                        max="4"
+                        placeholder="Combien d'enfants ?"
+                        required
+                      />
+                    </div>
+                  </div>
               </div>
               <div class="row">
                 <div class="col-md-12" id="alert-wrapper"></div>
@@ -473,6 +505,10 @@
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/comptearebours.js"></script>
-   
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"
+    ></script>
   </body>
 </html>
