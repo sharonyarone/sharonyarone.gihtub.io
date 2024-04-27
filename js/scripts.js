@@ -486,3 +486,16 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
+
+    document.getElementById("ouvrirInvit").addEventListener("click", function() {
+
+        var elementCible = document.getElementById("premierePage");
+        elementCible.style.display = "none";
+
+        var elementCible = document.getElementById("deuxiemePage");
+        elementCible.style.display = "block";
+
+        var audio = new Audio('./music.mp3');
+        // Lecture de la musique
+        audio.play();
+    });

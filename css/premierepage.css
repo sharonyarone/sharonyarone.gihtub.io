@@ -1,0 +1,29 @@
+#premierePage{
+    display: flex;
+    background-image: url(../img/marbre.jpg);
+    background-repeat: round;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.blocBlanc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 80vw;
+    height: 70vh;
+}
+.blocBlanc h1{
+    color:black;
+    font-size: 34px;
+    opacity: 0.7;
+}
+
+
