@@ -236,15 +236,15 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var chateauDesHautProvins = {lat: 48.560977, lng: 3.289905};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: location,
+        center: chateauDesHautProvins,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
-        position: location,
+        position: chateauDesHautProvins,
         map: map
     });
 }
