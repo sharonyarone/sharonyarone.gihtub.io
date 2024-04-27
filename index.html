@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/comptearebours.css" />
     <link rel="stylesheet" href="css/premierepage.css" />
-    
+
     <link
       rel="stylesheet"
       href="node_modules/animate.css/animate.min.css"
@@ -99,66 +99,77 @@
       <div class="blocBlanc">
         <h1>Nous allons nous marier !</h1>
         <h2>Sharon & Yarone</h2>
-        <div id="compte_a_rebours" class=""><noscript>Début de l'évènement le 6 Septembre 2024.</noscript></div>
+        <div id="compte_a_rebours" class="">
+          <noscript>Début de l'évènement le 6 Septembre 2024.</noscript>
+        </div>
         <div class="col-sm-4 text-center">
-          <a  id="ouvrirInvit" class="btn btn-accent btn-large rsvp-btn">Ouvrir l'invitation</a>
+          <a id="ouvrirInvit" class="btn btn-accent btn-large rsvp-btn"
+            >Ouvrir l'invitation</a
+          >
         </div>
       </div>
-      
     </section>
-    <section id="deuxiemePage" style="display: none;">
-    <section class="hero">
-      <section class="navigation">
-        <header>
-          <div class="header-content">
-            <div class="logo">
-              <a href="#"><img src="img/logo.png" alt="Logo" /></a>
+    <section id="deuxiemePage" style="display: none">
+      <section class="hero">
+        <section class="navigation">
+          <header>
+            <div class="header-content">
+              <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="Logo" /></a>
+              </div>
+              <div class="header-nav">
+                <nav>
+                  <ul class="primary-nav">
+                    <li>
+                      <a href="#intro">Où nous nous sommes rencontrés ?</a>
+                    </li>
+                    <li><a href="#events">Evênements</a></li>
+                    <!-- <li><a href="#instagram">Instagram</a></li> -->
+                    <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> !-->
+                  </ul>
+                  <ul class="member-actions">
+                    <li><a href="#map" class="login">Nous rejoindre</a></li>
+                    <li>
+                      <a href="#rsvp" class="btn-white btn-small"
+                        >Réservation</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="navicon">
+                <a class="nav-toggle" href="#"><span></span></a>
+              </div>
             </div>
-            <div class="header-nav">
-              <nav>
-                <ul class="primary-nav">
-                  <li><a href="#intro">Où nous nous sommes rencontrés ?</a></li>
-                  <li><a href="#events">Evênements</a></li>
-                  <!-- <li><a href="#instagram">Instagram</a></li> -->
-                  <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> !-->
-                </ul>
-                <ul class="member-actions">
-                  <li><a href="#map" class="login">Nous rejoindre</a></li>
-                  <li><a href="#rsvp" class="btn-white btn-small">Réservation</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="navicon">
-              <a class="nav-toggle" href="#"><span></span></a>
+          </header>
+        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="hero-content text-center">
+                <!--<h1>Ram and Antara</h1>-->
+                <img src="img/logo-lg.png" />
+                <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
+                <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+              </div>
             </div>
           </div>
-        </header>
+          <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs text-center">
+              <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn"
+                >Réserver</a
+              >
+            </div>
+            <div class="col-sm-4 hidden-xs"></div>
+          </div>
+        </div>
+        <div class="down-arrow floating-arrow">
+          <a href="#invitation"><i class="fa fa-angle-down"></i></a>
+        </div>
       </section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="hero-content text-center">
-              <!--<h1>Ram and Antara</h1>-->
-              <img src="img/logo-lg.png" />
-              <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-              <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 hidden-xs"></div>
-          <div class="col-sm-4 hidden-xs text-center">
-            <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">Réserver</a>
-          </div>
-          <div class="col-sm-4 hidden-xs"></div>
-        </div>
-      </div>
-      <div class="down-arrow floating-arrow">
-        <a href="#invitation"><i class="fa fa-angle-down"></i></a>
-      </div>
-    </section>
 
-    <!-- <section id="invitation" class="section-padding">
+      <!-- <section id="invitation" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -173,7 +184,7 @@
         </div>
       </div>
     </section> -->
-    <section id="intro">
+      <section id="intro">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -181,137 +192,135 @@
             </div>
           </div>
           <div class="row">
-          
-            <div class=" wp9 animated fadeInUp">
+            <div class="wp9 animated fadeInUp">
               <p>
-                Notre histoire a débuté il y a bien des années, dans les couloirs
-                animés du lycée. C'est là que nos chemins se sont croisés pour la
-                première fois, dans un tourbillon d'adolescence et de découvertes.
-                De discussions en rires complices, nous avons tissé des liens
-                forts qui ont résisté à l'épreuve du temps. Chaque instant passé
-                ensemble au lycée était une étincelle de notre amour naissant, une
-                promesse de complicité et de soutien mutuel pour l'avenir. Ces
-                années partagées ont façonné notre relation, nourrissant nos rêves
-                et renforçant notre attachement l'un à l'autre.
+                Notre histoire a débuté il y a bien des années, dans les
+                couloirs animés du lycée. C'est là que nos chemins se sont
+                croisés pour la première fois, dans un tourbillon d'adolescence
+                et de découvertes. De discussions en rires complices, nous avons
+                tissé des liens forts qui ont résisté à l'épreuve du temps.
+                Chaque instant passé ensemble au lycée était une étincelle de
+                notre amour naissant, une promesse de complicité et de soutien
+                mutuel pour l'avenir. Ces années partagées ont façonné notre
+                relation, nourrissant nos rêves et renforçant notre attachement
+                l'un à l'autre.
               </p>
             </div>
           </div>
         </div>
-        
       </section>
-   
 
-    <section class="events section-padding" id="events">
-        <div id="compte_a_rebours" class="wp8 animated fadeInLeft"><noscript>Début de l'évènement le 6 Septembre 2024.</noscript></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="header">Events</h3>
-          </div>
+      <section class="events section-padding" id="events">
+        <div id="compte_a_rebours" class="wp8 animated fadeInLeft">
+          <noscript>Début de l'évènement le 6 Septembre 2024.</noscript>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-            <div class="wp3">
-              <p><strong>25 septembre</strong></p>
-
-              <h5>Mairie <span class="time">1PM - 5PM</span></h5>
-              <p>
-                La cérémonie civile est un moment intime où les futurs époux
-                officialisent leur union devant la loi. Entourés de leurs
-                proches les plus proches, ils échangent leurs consentements et
-                signent les documents officiels qui les uniront légalement.
-                C'est un moment simple et émouvant, empreint de sincérité et de
-                légèreté, où l'amour et l'engagement sont célébrés dans la
-                simplicité et l'authenticité.
-              </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="header">Events</h3>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-            <div class="wp4">
-              <p><strong>26 septembre</strong></p>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+              <div class="wp3">
+                <p><strong>25 septembre</strong></p>
 
-              <h5>Houppa + Soirée <span class="time">10AM-11AM</span></h5>
-              <p>
-                La cérémonie de la houppa est un moment sacré où les mariés
-                échangent leurs vœux sous un magnifique auvent, symbole de leur
-                nouvelle maison et de leur engagement à construire un foyer
-                ensemble. Entourés de leurs proches, ils célèbrent leur amour et
-                leur union dans une atmosphère empreinte de tradition et de
-                solennité.<br /><br />
-                Après la cérémonie de la houppa, une soirée joyeuse et festive
-                attend les mariés et leurs invités. La soirée est l'occasion de
-                célébrer cette nouvelle étape de leur vie avec de la musique, de
-                la danse et des festivités qui dureront jusqu'au bout de la
-                nuit.
-              </p>
+                <h5>Mairie <span class="time">1PM - 5PM</span></h5>
+                <p>
+                  La cérémonie civile est un moment intime où les futurs époux
+                  officialisent leur union devant la loi. Entourés de leurs
+                  proches les plus proches, ils échangent leurs consentements et
+                  signent les documents officiels qui les uniront légalement.
+                  C'est un moment simple et émouvant, empreint de sincérité et
+                  de légèreté, où l'amour et l'engagement sont célébrés dans la
+                  simplicité et l'authenticité.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+              <div class="wp4">
+                <p><strong>26 septembre</strong></p>
+
+                <h5>Houppa + Soirée <span class="time">10AM-11AM</span></h5>
+                <p>
+                  La cérémonie de la houppa est un moment sacré où les mariés
+                  échangent leurs vœux sous un magnifique auvent, symbole de
+                  leur nouvelle maison et de leur engagement à construire un
+                  foyer ensemble. Entourés de leurs proches, ils célèbrent leur
+                  amour et leur union dans une atmosphère empreinte de tradition
+                  et de solennité.<br /><br />
+                  Après la cérémonie de la houppa, une soirée joyeuse et festive
+                  attend les mariés et leurs invités. La soirée est l'occasion
+                  de célébrer cette nouvelle étape de leur vie avec de la
+                  musique, de la danse et des festivités qui dureront jusqu'au
+                  bout de la nuit.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row section-padding">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <a
-              class="btn btn-accent btn-small"
-              data-toggle="modal"
-              data-target="#dc-modal"
-            >
-              <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-            </a>
+          <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+              <a
+                class="btn btn-accent btn-small"
+                data-toggle="modal"
+                data-target="#dc-modal"
+              >
+                <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+              </a>
+            </div>
           </div>
-        </div>
-        <!--<div class="row">
+          <!--<div class="row">
             <div class="col-xs-12 section-border section-padding">
             </div>
         </div>-->
-      </div>
-
-      <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span>&times;</span>
-              </button>
-              <h3 class="text-center section-padding">Euh... dress codes?</h3>
-              <h5>Mairie <span class="time">13h - 17h</span></h5>
-              <p>
-                <strong>Tenue décontractée élégante</strong>
-                <br />
-                Mesdames, optez pour une tenue élégante et décontractée, avec
-                une robe ou une jupe et un haut assorti. Messieurs, privilégiez
-                une tenue élégante avec une chemise et un pantalon bien coupé.
-                Les accessoires discrets sont les bienvenus pour parfaire votre
-                look.
-              </p>
-              <h5>Houppa + Soirée <span class="time">19h - 00h</span></h5>
-
-              <p>
-                <strong>Tenue de soirée chic</strong>
-                <br />
-                Mesdames, revêtez vos plus belles tenues de soirée pour cet
-                événement spécial. Optez pour une robe élégante ou une jupe
-                assortie à un haut sophistiqué. Messieurs, choisissez un costume
-                élégant avec une chemise assortie et une cravate ou un nœud
-                papillon. N'oubliez pas de compléter votre tenue avec des
-                accessoires raffinés pour briller lors de cette soirée
-                inoubliable.
-              </p>
-            </div>
-          </div>
-          <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
-      </div>
-      <!-- /.modal -->
-    </section>
 
-   
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span>&times;</span>
+                </button>
+                <h3 class="text-center section-padding">Euh... dress codes?</h3>
+                <h5>Mairie <span class="time">13h - 17h</span></h5>
+                <p>
+                  <strong>Tenue décontractée élégante</strong>
+                  <br />
+                  Mesdames, optez pour une tenue élégante et décontractée, avec
+                  une robe ou une jupe et un haut assorti. Messieurs,
+                  privilégiez une tenue élégante avec une chemise et un pantalon
+                  bien coupé. Les accessoires discrets sont les bienvenus pour
+                  parfaire votre look.
+                </p>
+                <h5>Houppa + Soirée <span class="time">19h - 00h</span></h5>
 
-    <!-- <section id="video-bg" class="hidden-sm hidden-xs">
+                <p>
+                  <strong>Tenue de soirée chic</strong>
+                  <br />
+                  Mesdames, revêtez vos plus belles tenues de soirée pour cet
+                  événement spécial. Optez pour une robe élégante ou une jupe
+                  assortie à un haut sophistiqué. Messieurs, choisissez un
+                  costume élégant avec une chemise assortie et une cravate ou un
+                  nœud papillon. N'oubliez pas de compléter votre tenue avec des
+                  accessoires raffinés pour briller lors de cette soirée
+                  inoubliable.
+                </p>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+      </section>
+
+      <!-- <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
          data-property="{videoURL:'https://www.youtube.com/watch?v=XC1RXutmP_M',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
     </div>
@@ -321,107 +330,98 @@
     </div>
 </section> -->
 
-    <section id="map" class="section-padding">
-      <div class="text-center">
-        <h3>Où nous rejoindre ?</h3>
-        <p>C'est plus simple que tu ne le penses !</p>
-      </div>
-      <div id="map-canvas"></div>
-      <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-            <div class="text-center">
-              <div
-                id="btn-show-content"
-                class="toggle-map-content pointer-events-auto"
-              >
-                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-              </div>
-            </div>
-            <div id="map-content" class="pointer-events-auto">
-              <div class="row">
-                <div class="col-md-6">
-                  <h5>Château des hauts de provins</h5>
-                  <p> Ferreux, 77560 Champcenest</p>
-                </div>
-                <div class="col-md-6">
-                  <h5>Mr. Amit Roy</h5>
-                  <p>
-                    <i class="fa fa-mobile"></i>
-                    <a href="tel://+919412345678">+91 9412345678</a><br />
-                    <i class="fa fa-mobile"></i>
-                    <a href="tel://+917123456789">+91 7123456789</a>
-                  </p>
-                </div>
-              </div>
-              <div class="row text-center">
-                <div class="col-md-6" style="padding: 5px">
-                  <a
-                    class="btn btn-fill btn-small"
-                    href="https://www.waze.com/fr/live-map/directions/chateau-des-hauts-de-provins-champcenest?to=place.w.2163175.21631748.26220961"
-                    ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
-                  >
-                </div>
-                <div class="col-md-6" style="padding: 5px">
-                  <a class="btn btn-accent btn-small" id="btn-show-map"
-                    ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+      <section id="map" class="section-padding">
+        <div class="text-center">
+          <h3>Où nous rejoindre ?</h3>
+          <p>C'est plus simple que tu ne le penses !</p>
         </div>
-      </div>
-    </section>
-    <section class="rsvp text-center" id="rsvp">
-      <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span>&times;</span>
-              </button>
-              <div class="section-padding">
-                <h3>Thank you!</h3>
-                <p>We are glad to see you join us on our big day.</p>
-                <div id="add-to-cal"></div>
+        <div id="map-canvas"></div>
+        <div id="map-content-wrapper" class="container pointer-events-none">
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+              <div class="text-center">
+                <div
+                  id="btn-show-content"
+                  class="toggle-map-content pointer-events-auto"
+                >
+                  <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-      </div>
-      <!-- /.modal -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <h3>Qu'est-ce que vous attendez pour nous rejoindre ?</h3>
-            <p>
-             On serait très reconnaissant si vous pouviez réserver avant le 15 août 2024
-            </p>
-            <form id="rsvp-form" class="rsvp-form" action="" method="POST">
-              <div class="row">
-                
-                <div class="col-md-6 col-sm-6">
-                  <div class="form-input-group">
-                    <i class="fa fa-user"></i
-                    ><input
-                      name="name"
-                      class=""
-                      placeholder="Your name"
-                      required
-                    />
+              <div id="map-content" class="pointer-events-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Château des hauts de provins</h5>
+                    <p>Ferreux, 77560 Champcenest</p>
                   </div>
-                  
+                  <div class="col-md-6 mb-5"></div>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="row text-center">
+                  <div class="col-md-6" style="padding: 5px">
+                    <a
+                      class="btn btn-fill btn-small"
+                      href="https://www.waze.com/fr/live-map/directions/chateau-des-hauts-de-provins-champcenest?to=place.w.2163175.21631748.26220961"
+                      ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                    >
+                  </div>
+                  <div class="col-md-6" style="padding: 5px">
+                    <a class="btn btn-accent btn-small" id="btn-show-map"
+                      ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rsvp text-center" id="rsvp">
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span>&times;</span>
+                </button>
+                <div class="section-padding">
+                  <h3>Thank you!</h3>
+                  <p>We are glad to see you join us on our big day.</p>
+                  <div id="add-to-cal"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3" style="margin-top: 15vh">
+              <h3>Qu'est-ce que vous attendez pour nous rejoindre ?</h3>
+              <p>
+                On serait très reconnaissant si vous pouviez réserver avant le
+                15 août 2024
+              </p>
+              <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        name="name"
+                        class=""
+                        placeholder="Your name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
                     <div class="form-input-group">
                       <i class="fa fa-user"></i
                       ><input
@@ -432,10 +432,9 @@
                       />
                     </div>
                   </div>
-              </div>
-              <div class="row">
-                
-                <div class="col-md-12 col-sm-12">
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
                     <div class="form-input-group">
                       <i class="fa fa-envelope"></i
                       ><input
@@ -447,10 +446,9 @@
                       />
                     </div>
                   </div>
-              </div>
-              <div class="row">
-                
-                <div class="col-md-6 col-sm-6">
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
                     <div class="form-input-group">
                       <i class="fa fa-users"></i
                       ><input
@@ -477,10 +475,9 @@
                       />
                     </div>
                   </div>
-              </div>
-              <div class="row">
-                
-                <div class="col-md-6 col-sm-6">
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
                     <div class="form-input-group">
                       <i class="fa fa-user"></i
                       ><input
@@ -491,29 +488,29 @@
                       />
                     </div>
                   </div>
-              
-              <div class="col-md-6 col-sm-6">
-                <div class="form-input-group">
-                  <i class="fa fa-user"></i
-                  ><input
-                    type="text"
-                    name="text"
-                    class=""
-                    placeholder="Noms des enfants"
-                  />
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        type="text"
+                        name="text"
+                        class=""
+                        placeholder="Noms des enfants"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <div class="row">
+                  <div class="col-md-12" id="alert-wrapper"></div>
+                </div>
+                <button class="btn-fill rsvp-btn">Yes, that's me!</button>
+              </form>
             </div>
-              <div class="row">
-                <div class="col-md-12" id="alert-wrapper"></div>
-              </div>
-              <button class="btn-fill rsvp-btn">Yes, that's me!</button>
-            </form>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-  </section>
     <script
       src="js/vendor/jquery-1.11.2.min.js"
       onerror="loadJsFromCDN('jquery.js')"
@@ -534,5 +531,7 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
   </body>
 </html>
