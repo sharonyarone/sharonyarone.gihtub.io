@@ -5,7 +5,7 @@
     background-color: transparent;
     color: black;
     text-align: center;
-    width: 80vw;
+    width: 100vw;
     padding: 0 5px 10px 5px;
   }
 
@@ -43,7 +43,7 @@
 @media screen and (max-width: 500px) {
 
       .nb {
-        font-size: 3em;
+        font-size: 2em;
       }
       
     
