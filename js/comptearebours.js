@@ -35,12 +35,20 @@ function compte_a_rebours() {
     if (secondes < 2) {
       mot_seconde = "seconde";
     }
-
-    compte_a_rebours.innerHTML = prefixe + '<br /><div class="block">' 
-      + '<div class="nb">' + jours + '</div><br />' + mot_jour + '</div><div class="block">' 
-      + '<div class="nb">' + heures + '</div><br />' + mot_heure + '</div><div class="block">'
-      + '<div class="nb">' + minutes + '</div><br />' + mot_minute + '</div><div class="block"> '
-      + '<div class="nb">' + secondes + '</div><br />' + mot_seconde + '</div>';
+//style="font-family: Pinyon Script">
+compte_a_rebours.innerHTML = prefixe + '<br /><div style=display:flex;justify-content:space-evenly>'
++ '<div class="block">'
++ '<div class="nb" >' + jours + '</div><span class=textCompteARebours>' + mot_jour + '</span>'
++ '</div>'
++ '<div class="block">'
++ '<div class="nb" >' + heures + '</div><span class=textCompteARebours>' + mot_heure + '</span>'
++ '</div>'
++ '<div class="block">'
++ '<div class="nb" >' + minutes + '</div><span class=textCompteARebours>' + mot_minute + '</span>'
++ '</div>'
++ '<div class="block">'
++ '<div class="nb" >' + secondes + '</div><span class=textCompteARebours>' + mot_seconde + '</span>'
++ '</div></div>';
   } else {
     compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
   }
