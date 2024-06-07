@@ -343,11 +343,15 @@ section .header {
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
-.Mairie{
+.Mairie-img{
+  background: url("../img/marbre_bleu.jpg") center bottom;
+}
+.houppa-img{
+  background: url("../img/marbre_blanc.jpg") center bottom;
+}
+.Mairie,.houppa{
   height: auto;
   width: 100vw;
-
-  background: url("../img/marbre_bleu.jpg") center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -448,24 +452,14 @@ header .member-actions {
   top: 41px;
   transition: all 300ms ease-in-out;
 }
-/* .card{
-  display: grid;
-  background-color: #fff;
-  width: 90vw;
-  height: auto;
-  opacity: 0.8;
-  border: 7px solid rgba(247, 236, 112, 0.767);
- 
-  
-} */
 
 .card {
   margin: 8vh 0;
   background-color: #fff;
   padding: 20px;
-  border: 7px solid rgba(247, 236, 112, 0.767);
+  border: 7px solid #e8ca6f;
   opacity: 0.9;
-  width: 90vw;
+  width: 95vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -478,6 +472,7 @@ header .member-actions {
 
 .main-title h1 {
   margin: 10px 0;
+  color: antiquewhite;
 }
 
 .rings img {

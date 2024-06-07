@@ -1,7 +1,7 @@
 function compte_a_rebours() {
   var compte_a_rebours = document.getElementById("compte_a_rebours");
   var date_actuelle = new Date();
-  var date_evenement = new Date("Sep 25 2024 09:00:00");
+  var date_evenement = new Date("Sep 23 2024 15:00:00");
   var total_secondes = (date_evenement - date_actuelle) / 1000;
   var prefixe = '';
   if (total_secondes < 0) {
