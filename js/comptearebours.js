@@ -3,7 +3,7 @@ function compte_a_rebours() {
   var date_actuelle = new Date();
   var date_evenement = new Date("Sep 25 2024 09:00:00");
   var total_secondes = (date_evenement - date_actuelle) / 1000;
-  var prefixe = '<div class="prefixe">Rendez-vous dans : </div>';
+  var prefixe = '';
   if (total_secondes < 0) {
     prefixe = "Compte à rebours terminé il y a ";
     total_secondes = Math.abs(total_secondes);

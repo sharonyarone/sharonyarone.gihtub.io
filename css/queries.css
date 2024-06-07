@@ -11,11 +11,6 @@
 
 }
 
-@media screen and (max-width: 1024px) {
-    .hero .hero-content {
-        padding-top: 50%;
-    }
-}
 
 /* Responsive nav kicks in */
 @media screen and (max-width: 991px) {
@@ -24,10 +19,7 @@
         padding-left: 25px;
     }
 
-    .hero .hero-content {
-        padding-top: 50%;
-    }
-
+   
     .header-nav {
         position: fixed;
         background-color: #000;
@@ -291,76 +283,3 @@
 
 }
 
-@media screen and (max-width: 480px) {
-    .hero .hero-content {
-        padding-top: 110%;
-    }
-    
-    .hero .hero-content img {
-        width: 65%;
-    }
-
-    .hero .btn {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .hero .btn:first-of-type {
-        margin-bottom: 20px;
-    }
-
-    .hero h1 {
-        font-size: 50px;
-    }
-
-    .btn-margin-right {
-        margin-right: 0px;
-    }
-
-    .features .device-showcase-left {
-        position: absolute;
-        bottom: -392px;
-        left: 41%;
-        right: auto;
-        transform: translateX(-50%);
-    }
-
-    .features .ipad-wrap {
-        width: 706px;
-        height: 1002px;
-        background: url("../img/ipad-device.png") no-repeat center center;
-        z-index: 1;
-        background-size: 40%;
-    }
-
-    .features .iphone-wrap {
-        width: 304px;
-        height: 617px;
-        background: url("../img/iphone6.png") no-repeat center center;
-        position: absolute;
-        left: 350px;
-        bottom: 129px;
-        z-index: 2;
-        background-size: 40%;
-    }
-
-    .features {
-        padding-bottom: 0;
-    }
-
-    .down-arrow {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 320px) {
-    .hero .hero-content {
-        padding-top: 130%;
-    }
-
-    .rsvp {
-        padding-top: 20px;
-    }
-}
