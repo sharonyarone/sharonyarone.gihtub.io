@@ -124,9 +124,9 @@ a:focus {
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  color: rgba(28, 54, 83, 0.6);
+  color: rgb(255, 255, 255);
   -webkit-text-size-adjust: 100%;
-  background-color: #acb1b4;
+  background-color: #ffffff;
 }
 *:focus {
   outline: none !important;
@@ -350,6 +350,9 @@ section .header {
 .houppa-img{
   background: url("../img/marbre_blanc.jpg") center bottom;
 }
+.houppa{
+  margin-top: 3px;
+}
 .Mairie,.houppa{
   height: auto;
   width: 100vw;
@@ -459,7 +462,7 @@ header .member-actions {
   background-color: #fff;
   padding: 20px;
   border: 7px solid #e8ca6f;
-  opacity: 0.9;
+  opacity: 0.94;
   width: 95vw;
   text-align: center;
   display: flex;
