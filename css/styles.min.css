@@ -1,14 +1,22 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
 @import "https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic";
 @import "https://fonts.googleapis.com/css?family=Nunito:400,300,700";
+@import url("https://use.typekit.net/fou4bgn.css");
 p {
-  font-size: 20px;
+  font-family: "adobe-caslon-pro", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 23px;
   line-height: 29px;
   color: rgba(28, 54, 83, 1);
-  padding-bottom: 20px;
+  padding: 5px;
+  
 }
 input{
   color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gotham', sans-serif;
 }
 h1 {
   font-size: 60px;
@@ -353,7 +361,7 @@ section .header {
 .rsvp-img{
   background: url("../img/reservation.jpg") center bottom;
 }
-.houppa,.rsvp{
+.Mairie,.rsvp{
   margin-top: 3px;
 }
 .Mairie,.houppa,.rsvp{
@@ -579,10 +587,14 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder {
   color: #bcc1c3;
 }
-@media (max-width: 600px) {
-  .families {
+
+ @media (max-width: 600px) {
+  /* .families {
       flex-direction: column;
       gap: 10px;
-  }
-
+  } */
+p{
+  font-size: 15px;
+  line-height: 16px;
 }
+} 
