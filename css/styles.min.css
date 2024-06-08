@@ -88,12 +88,10 @@ h5 {
 }
 section.intro,
 section.features-extra,
-section.rsvp {
-  background: #fff;
-}
+
 section.features,
 section.events,
-section.blog, section.rsvp {
+section.blog {
   background: #f8f9fd;
 }
 .group:after {
@@ -350,10 +348,13 @@ section .header {
 .houppa-img{
   background: url("../img/marbre_blanc.jpg") center bottom;
 }
-.houppa{
+.rsvp-img{
+  background: url("../img/reservation.jpg") center bottom;
+}
+.houppa,.rsvp{
   margin-top: 3px;
 }
-.Mairie,.houppa{
+.Mairie,.houppa,.rsvp{
   height: auto;
   width: 100vw;
   -webkit-background-size: cover;
@@ -394,7 +395,7 @@ section .header {
 }
 .fixed {
   position: fixed;
-  background-color: rgb(9 48 103 / 75%);
+  background-color: rgba(161, 161, 161, 0.9);
   z-index: 999;
   width: 100%;
 }
@@ -461,7 +462,7 @@ header .member-actions {
   margin: 8vh 0;
   background-color: #fff;
   padding: 20px;
-  border: 7px solid #e8ca6f;
+  border: 4px solid #e8ca6f;
   opacity: 0.94;
   width: 95vw;
   text-align: center;
