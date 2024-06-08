@@ -268,6 +268,7 @@ section .header {
 .bounceInDown {
   visibility: visible;
 }
+
 .header-nav.open {
   visibility: visible;
   opacity: 0.9;
@@ -276,7 +277,7 @@ section .header {
 }
 .nav-toggle {
   position: absolute;
-  top: 0;
+  top: 14px;
   right: 15px;
   z-index: 999999;
   padding: 10px 35px 16px 0;
@@ -449,7 +450,7 @@ header .header-nav {
 header .member-actions {
   position: absolute;
   right: 0;
-  top: 41px;
+  top: 56px;
   transition: all 300ms ease-in-out;
 }
 
