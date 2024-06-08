@@ -234,35 +234,115 @@
     </section>
     <section id="rsvp" class="rsvp rsvp-img section-card">
       <div class="card">
-        <div class="main-title">
-          <h1>HOUPPA & SOIRÉE</h1>
-          <div class="rings"><img style="filter: grayscale(100);" width="1000" height="1000" src="img/houppa.png" sizes="(max-width: 1000px) 100vw, 1000px"></div>
-        </div>
-        <div class="couple">
-          <div class="person">
-            <h2>Sharon</h2>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <h3>Qu'est-ce que vous attendez pour nous rejoindre ?</h3>
+              <p>
+                On serait très reconnaissant si vous pouviez réserver avant le
+                15 août 2024
+              </p>
+              <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        name="name"
+                        class=""
+                        placeholder="Your name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        name="firstName"
+                        class=""
+                        placeholder="Ton prénom"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-input-group">
+                      <i class="fa fa-envelope"></i
+                      ><input
+                        type="email"
+                        name="email"
+                        class=""
+                        placeholder="Your email"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-users"></i
+                      ><input
+                        type="number"
+                        name="extras-adult"
+                        class=""
+                        min="0"
+                        max="4"
+                        placeholder="Combien d'adultes ?"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-users"></i
+                      ><input
+                        type="number"
+                        name="extras-child"
+                        class=""
+                        min="0"
+                        max="4"
+                        placeholder="Combien d'enfants ?"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        type="text-area"
+                        name="text"
+                        class=""
+                        placeholder="Noms des adultes"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-input-group">
+                      <i class="fa fa-user"></i
+                      ><input
+                        type="text"
+                        name="text"
+                        class=""
+                        placeholder="Noms des enfants"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12" id="alert-wrapper"></div>
+                </div>
+                <button class="btn-fill rsvp-btn">Envoyer  <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+              </form>
+            </div>
           </div>
-          <p>&</p>
-          <div class="person">
-            <h2>Yarone</h2>
-          </div>
-        </div>
-        <p>
-          seraient honorés de votre présence à la cérémonie religieuse qui sera célébrée
-        </p>
-        <p>
-          Le lundi 23 septembre 2024<br /> à 18h00 précise
-        </p>
-        <p>
-          à l'Orangerie du manoir des Vignes<br />58 rue Bernard, 93000 BOBIGNY
-        </p>
-        <div class="button">
-          <a
-            href="https://www.waze.com/fr/live-map/directions/seine-saint-denis/bobigny?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ws.row.15049867.58"
-            target="_blank"
-          >
-            <button class="btn" style="border: 2px solid #e8ca6f;">Itinéraire</button>
-          </a>
         </div>
       </div>
     </section>
