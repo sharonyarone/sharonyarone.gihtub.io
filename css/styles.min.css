@@ -14,6 +14,9 @@ p {
 input {
   color: #000;
 }
+label{
+  font-weight: 300;
+}
 h1,
 h2,
 h3,
@@ -605,8 +608,9 @@ header .member-actions {
 .radio-container {
   display: flex;
   align-items: center;
-  font-size: 16px; /* La même taille que les placeholders */
-  font-family: "Open Sans", sans-serif;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   color: #bcc1c3; /* La même couleur que les placeholders */
 }
 
@@ -619,7 +623,7 @@ header .member-actions {
   padding-left: 30px;
   cursor: pointer;
   user-select: none;
-  color: #bcc1c3; /* La même couleur que les placeholders */
+  color: #aeaea9; /* La même couleur que les placeholders */
 }
 
 .radio-container .radio-label::before {
@@ -628,8 +632,9 @@ header .member-actions {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
+
   border: 2px solid #e8ca6f;
   border-radius: 50%;
   background: white;
