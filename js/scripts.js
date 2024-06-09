@@ -167,15 +167,23 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+    $('#btn-show-map1').click(function () {
+        $('#map-content1').toggleClass('toggle-map-content');
+        $('#btn-show-content1').toggleClass('toggle-map-content');
     });
-    $('#btn-show-content').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+    $('#btn-show-content1').click(function () {
+        $('#map-content1').toggleClass('toggle-map-content');
+        $('#btn-show-content1').toggleClass('toggle-map-content');
     });
 
+    $('#btn-show-map2').click(function () {
+        $('#map-content2').toggleClass('toggle-map-content');
+        $('#btn-show-content2').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-content').click(function () {
+        $('#map-content2').toggleClass('toggle-map-content');
+        $('#btn-show-content2').toggleClass('toggle-map-content');
+    });
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
         options: {
@@ -238,31 +246,60 @@ $(document).ready(function () {
 // Google map
 function initMap() {
     var chateauDesHautProvins = {lat: 48.560977, lng: 3.289905};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+
+    var map1 = new google.maps.Map(document.getElementById('map-canvas1'), {
         zoom: 15,
         center: chateauDesHautProvins,
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
+    var marker1 = new google.maps.Marker({
         position: chateauDesHautProvins,
-        map: map
+        map: map1
+    });
+
+    var map2 = new google.maps.Map(document.getElementById('map-canvas2'), {
+        zoom: 15,
+        center: chateauDesHautProvins,
+        scrollwheel: false
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: chateauDesHautProvins,
+        map: map2
     });
 }
 
 function initBBSRMap() {
     var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    var map1 = new google.maps.Map(document.getElementById('map-canvas1'), {
         zoom: 15,
         center: la_fiesta,
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
+    var marker1 = new google.maps.Marker({
         position: la_fiesta,
-        map: map
+        map: map1
     });
+
+
+    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var map2 = new google.maps.Map(document.getElementById('map-canvas2'), {
+        zoom: 15,
+        center: la_fiesta,
+        scrollwheel: false
+    });
+
+    var marker1 = new google.maps.Marker({
+        position: la_fiesta,
+        map: map2
+    });
+
+
 }
+
+
 
 // alert_markup
 function alert_markup(alert_type, msg) {
