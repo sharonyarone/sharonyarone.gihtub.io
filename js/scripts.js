@@ -180,7 +180,7 @@ $(document).ready(function () {
         $('#map-content2').toggleClass('toggle-map-content');
         $('#btn-show-content2').toggleClass('toggle-map-content');
     });
-    $('#btn-show-content').click(function () {
+    $('#btn-show-content2').click(function () {
         $('#map-content2').toggleClass('toggle-map-content');
         $('#btn-show-content2').toggleClass('toggle-map-content');
     });
@@ -245,16 +245,16 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var chateauDesHautProvins = {lat: 48.560977, lng: 3.289905};
+    var orangerie = {lat: 48.560977, lng: 3.289905};
 
     var map1 = new google.maps.Map(document.getElementById('map-canvas1'), {
         zoom: 15,
-        center: chateauDesHautProvins,
+        center: orangerie,
         scrollwheel: false
     });
 
     var marker1 = new google.maps.Marker({
-        position: chateauDesHautProvins,
+        position: orangerie,
         map: map1
     });
 
