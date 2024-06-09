@@ -10,16 +10,20 @@ p {
   line-height: 29px;
   color: rgba(28, 54, 83, 1);
   padding: 5px;
-  
 }
-input{
+input {
   color: #000;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Gotham', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham", sans-serif;
 }
 h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 h2 {
   font-size: 40px;
@@ -99,7 +103,6 @@ h5 {
 }
 section.intro,
 section.features-extra,
-
 section.features,
 section.events,
 section.blog {
@@ -352,19 +355,22 @@ section .header {
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
-.Mairie-img{
+.Mairie-img {
   background: url("../img/marbre_bleu.jpg") center bottom;
 }
-.houppa-img{
+.houppa-img {
   background: url("../img/marbre_blanc.jpg") center bottom;
 }
-.rsvp-img{
+.rsvp-img {
   background: url("../img/reservation.jpg") center bottom;
 }
-.Mairie,.rsvp{
+.Mairie,
+.rsvp {
   margin-top: 3px;
 }
-.Mairie,.houppa,.rsvp{
+.Mairie,
+.houppa,
+.rsvp {
   height: auto;
   width: 100vw;
   -webkit-background-size: cover;
@@ -375,7 +381,7 @@ section .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top:10vh
+  padding-top: 10vh;
 }
 .section-card .down-arrow a {
   color: #fff;
@@ -443,7 +449,7 @@ header ul.primary-nav li a {
   padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
-  border:0px;
+  border: 0px;
   color: #e8ca6f;
 }
 header ul.primary-nav li:last-child a {
@@ -588,13 +594,96 @@ header .member-actions {
   color: #bcc1c3;
 }
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
   /* .families {
       flex-direction: column;
       gap: 10px;
   } */
-p{
-  font-size: 15px;
-  line-height: 16px;
+  p {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .radio-group{
+    flex-direction: column;
+  }
 }
-} 
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* La même taille que les placeholders */
+  font-family: "Open Sans", sans-serif;
+  color: #bcc1c3; /* La même couleur que les placeholders */
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container .radio-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: #bcc1c3; /* La même couleur que les placeholders */
+}
+
+.radio-container .radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e8ca6f;
+  border-radius: 50%;
+  background: white;
+}
+
+.radio-container input[type="radio"]:checked + .radio-label::before {
+  border-color: #e8ca6f;
+  background-color: #e8ca6f;
+}
+
+.radio-container input[type="radio"]:checked + .radio-label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+@media (max-width: 600px) {
+  .radio-group {
+    flex-direction: column;
+    align-items: center;
+    height: auto !important;
+  }
+  
+  .radio-container {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+
+  .radio-container .radio-label {
+    padding-left: 40px; /* Ajuste le padding pour centrer le texte */
+  }
+
+  .radio-container .radio-label::before {
+    left: 10px; /* Ajuste la position du cercle */
+  }
+}
