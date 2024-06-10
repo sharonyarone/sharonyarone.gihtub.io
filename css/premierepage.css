@@ -19,6 +19,7 @@
     background-color: white;
     width: 80vw;
     height: 55vh;
+    min-height: 400px;
 }
 .blocBlanc h1{
     color:black;
