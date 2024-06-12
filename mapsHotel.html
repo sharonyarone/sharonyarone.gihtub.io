@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sharon & Yarone se marient!</title>
+    <meta
+      name="description"
+      content="Nous amerions vous inviter à notre meilleur jour"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Sharon et Yarone se marient !" />
+    <meta
+      property="og:description"
+      content="Nous amerions vous inviter à notre meilleur jour"
+    />
+    <meta property="og:image" content="/img/hero.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    
+
+    <script>
+      // load css files from CDN if local node_modules fail
+      function loadCssFromCDN(css) {
+        // create new link tag
+        const link = document.createElement("link");
+        if (css === "animate.css") {
+          link.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css";
+        } else if (css === "font-awesome.css") {
+          link.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+        }
+        link.rel = "stylesheet";
+
+        // add link tag to head section
+        document.getElementsByTagName("head")[0].appendChild(link);
+      }
+
+      // load js files from CDN if local node_modules fail
+      function loadJsFromCDN(js) {
+        if (js === "waypoints.js") {
+          document.write(
+            '<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>'
+          );
+        } else if (js === "jquery.js") {
+          document.write(
+            '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>'
+          );
+        }
+      }
+    </script>
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/comptearebours.css" />
+    <link rel="stylesheet" href="css/premierepage.css" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/animate.css/animate.min.css"
+      onerror="loadCssFromCDN('animate.css')"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+      onerror="loadCssFromCDN('font-awesome.css')"
+    />
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body>
+  
+    <section id="deuxiemePage" style="display: flex;flex-direction:column; background-color: rgba(234, 250, 254, 0.452);">
+      
+      <section id="map1" class="map section-padding">
+        <div class="text-center">
+          <h3>Houppa + Soirée</h3>
+          <h5>Jeudi 26 septembre 2024</h5>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5245.229268431461!2d2.422550176494373!3d48.90368099751809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66cfae9510615%3A0x3580c52ec55ab7eb!2s58%20Rue%20Bernard%2C%2093000%20Bobigny!5e0!3m2!1sfr!2sfr!4v1717930807718!5m2!1sfr!2sfr" style="width: 90vw;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map-content-wrapper1" class="container pointer-events-none">
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+              <div class="text-center">
+                <div
+                  id="btn-show-content1"
+                  class="toggle-map-content pointer-events-auto"
+                >
+                  <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Voir les infos
+                </div>
+              </div>
+              <div id="map-content1" class="pointer-events-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>L'Orangerie du manoir des Vignes</h5>
+                    <p>58 rue Bernard, 93000 BOBIGNY</p>
+                  </div>
+                  <div class="col-md-6 mb-5"></div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-md-6" style="padding: 5px">
+                    <a
+                      class="btn btn-fill btn-small"
+                      href="https://www.waze.com/fr/live-map/directions/fr/idf/bobigny/58-rue-bernard?to=place.ChIJFQZR6fps5kcR67daxS7FgDU"
+                      ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                    >
+                  </div>
+                  <div class="col-md-6" style="padding: 5px">
+                    <a class="btn btn-accent btn-small" id="btn-show-map1"
+                      ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir la carte</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="map2" class="map section-padding">
+        <div class="text-center">
+          <h3>Mairie</h3>
+          <h5>Lundi 23 septembre 2024</h5>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.896244156063!2d2.5138950764941503!3d48.898314497895996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e613ae0eb4c681%3A0x7363f75e0fd95588!2s121%20Av.%20de%20la%20R%C3%A9sistance%2C%2093340%20Le%20Raincy!5e0!3m2!1sfr!2sfr!4v1717931118370!5m2!1sfr!2sfr" style="width: 90vw;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map-content-wrapper2" class="container pointer-events-none">
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+              <div class="text-center">
+                <div
+                  id="btn-show-content2"
+                  class="toggle-map-content pointer-events-auto"
+                >
+                  <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Voir les infos
+                </div>
+              </div>
+              <div id="map-content2" class="pointer-events-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Mairie du Raincy</h5>
+                    <p>121 avenue de la resistance, 93340 LE RAINCY</p>
+                  </div>
+                  <div class="col-md-6 mb-5"></div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-md-6" style="padding: 5px">
+                    <a
+                      class="btn btn-fill btn-small"
+                      href="https://www.waze.com/fr/live-map/directions/fr/idf/le-raincy/121-av.-de-la-resistance?to=place.ChIJgca0Dq4T5kcRiFXZD173Y3M"
+                      ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                    >
+                  </div>
+                  <div class="col-md-6" style="padding: 5px">
+                    <a class="btn btn-accent btn-small" id="btn-show-map2"
+                      ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir la carte</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="map2" class="map section-padding">
+        <div class="text-center">
+          <h3>Vin d'honneur</h3>
+          <h5>Lundi 23 septembre 2024</h5>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5244.281012862846!2d2.5210390900633928!3d48.91271522299254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e613be271bf063%3A0xffc233dd792f40d6!2s19%20All.%20la%20Fontaine%2C%2093190%20Livry-Gargan!5e0!3m2!1sfr!2sfr!4v1718216356579!5m2!1sfr!2sfr" style="width: 90vw;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map-content-wrapper2" class="container pointer-events-none">
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+              <div class="text-center">
+                <div
+                  id="btn-show-content2"
+                  class="toggle-map-content pointer-events-auto"
+                >
+                  <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Voir les infos
+                </div>
+              </div>
+              <div id="map-content2" class="pointer-events-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Vin d'honneur</h5>
+                    <p>19 All. la Fontaine, 93190 Livry-Gargan</p>
+                  </div>
+                  <div class="col-md-6 mb-5"></div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-md-6" style="padding: 5px">
+                    <a
+                      class="btn btn-fill btn-small"
+                      href="https://www.waze.com/fr/live-map/directions/fr/idf/livry-gargan/19-all.-la-fontaine?to=place.ChIJY_AbJ74T5kcR1kAved0zwv8"
+                      ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                    >
+                  </div>
+                  <div class="col-md-6" style="padding: 5px">
+                    <a class="btn btn-accent btn-small" id="btn-show-map2"
+                      ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir la carte</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      
+    <script
+    src="js/vendor/jquery-1.11.2.min.js"
+    onerror="loadJsFromCDN('jquery.js')"
+  ></script>
+  <script
+    src="node_modules/waypoints/lib/jquery.waypoints.min.js"
+    onerror="loadJsFromCDN('waypoints.js')"
+  ></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/vendor/ouical.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/comptearebours.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
