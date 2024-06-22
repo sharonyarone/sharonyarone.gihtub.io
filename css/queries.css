@@ -309,8 +309,11 @@
         margin: 50px 0 50px 0;
     }
     .fleur-card{
-        width: 30vw;
+        width: 25vw;
       }
+      .fleur-card-bas{
+        width: 20vw;
+        }
 
 }
 
