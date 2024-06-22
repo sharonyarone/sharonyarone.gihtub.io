@@ -650,17 +650,7 @@ header .member-actions {
   background-color: #e8ca6f;
 }
 
-.radio-container input[type="radio"]:checked + .radio-label::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fff;
-}
+
 
 
 
