@@ -492,6 +492,7 @@ header .member-actions {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 
 .hebrew-text {
@@ -699,6 +700,30 @@ header .member-actions {
     justify-content: center;
     align-items: center;
 }
-#map1,#map2{
+#map2{
   margin: 3vh 0;
 }
+.fleur-card{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10vw;
+  height: auto;
+  
+}
+.transform{
+  transform: scaleX(-1);
+}
+
+#retourDeuxiemePage{
+  position: fixed;
+  height: 40px;
+  width: 70px;
+  margin: 10px;
+  justify-content: center;
+}
+
+#retourDeuxiemePage i{
+  font-size: 20px;
+}
+

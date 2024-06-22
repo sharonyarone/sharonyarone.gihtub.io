@@ -110,7 +110,11 @@
                   <li>
                     <a href="#mairie">Mairie</a>
                   </li>
-                  <li><a href="#houppa">Houppa et soirée</a></li>
+                  <li><a href="#houppa">Houppa</a></li>
+                  <li>
+                    <a onClick="ouvrirItineraire()">Itinéraires</a>
+                  </li>
+                  <li><a href="#afterMairie">After Mairie</a></li>
                 </ul>
                 <ul class="member-actions">
                   <li>
@@ -130,6 +134,7 @@
 
       <section id="houppa" class="houppa houppa-img section-card">
         <div class="card">
+          <img class="fleur-card" src="img/fleur2.png" alt="fleur">
           <div style="display: flex;justify-content: space-between;">
             <div></div>
             <div>
@@ -137,7 +142,7 @@
             </div>
           </div>
           <div class="main-title">
-            <h1>HOUPPA & SOIRÉE</h1>
+            <h1>HOUPPA</h1>
             <div class="rings"><img style="filter: grayscale(100);" width="1000" height="1000" src="img/houppa.png" sizes="(max-width: 1000px) 100vw, 1000px"></div>
           </div>
           <div class="families">
@@ -147,7 +152,7 @@
               <p>Mme Georgette Assouline</p>
             </div>
             <div>
-              <p>M. & Mme Guillaume et Valérie Dahan</p>
+              <p>M. & Mme Mickael et Valérie Dahan</p>
             </div>
           </div>
           <p>Ont la joie de vous faire part du mariage de leurs enfants et petits enfants</p>
@@ -181,18 +186,14 @@
             </p>
           </div>
           <div class="button">
-            <a
-              href="mapsHotel.html"
-              target="_blank"
-            >
-              <button class="btn" style="border: 2px solid #e8ca6f;">Itinéraire</button>
-            </a>
+              <button class="btn" onclick="ouvrirItineraire()" style="border: 2px solid #e8ca6f;">Itinéraire</button>
           </div>
         </div>
       </section>
      
       <section id="mairie" class="Mairie Mairie-img section-card">
         <div class="card">
+          <img class="fleur-card transform" src="img/fleur.png" alt="fleur">
           <div class="main-title">
             <h1>MAIRIE</h1>
             <div class="rings"><img  width="1000" height="1000" src="img/anneau.png" sizes="(max-width: 1000px) 100vw, 1000px"></div>
@@ -226,12 +227,9 @@
           
           
           <div class="button">
-            <a
-              href="mapsHotel.html"
-              target="_blank"
-            >
-              <button class="btn" style="border: 2px solid #e8ca6f;">Itinéraire</button>
-            </a>
+           
+              <button class="btn" onclick="ouvrirItineraire()" style="border: 2px solid #e8ca6f;">Itinéraire</button>
+            
           </div>
         </div>
         
@@ -246,7 +244,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-3">
-              <h3>Pour confirmer votre présence, veuillez répondre au formulaire :</h3>
+              <h3>Pour confirmer votre présence, veuillez répondre au formulaire</h3>
               <p>
                 On serait très reconnaissant si vous pouviez réserver avant le
                 15 août 2024
@@ -275,21 +273,7 @@
                       />
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 col-sm-12">
-                    <div class="form-input-group">
-                      <i class="fa fa-envelope"></i
-                      ><input
-                        type="email"
-                        name="email"
-                        class=""
-                        placeholder="ton adresse mail"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
+                <!-- </div>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <div class="form-input-group">
@@ -304,8 +288,8 @@
                         required
                       />
                     </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6">
+                  </div> -->
+                  <div class="col-md-12 col-sm-12">
                     <div class="form-input-group">
                       <i class="fa fa-user"></i
                       ><input
@@ -351,6 +335,149 @@
 
     
 
+
+
+<!-- Troisième Page -->
+  
+  <section id="troisiemePage" style="display: none;flex-direction:column">
+    <div class="button">
+      <button id="retourDeuxiemePage" class="btn"  style="display:flex;align-items: center;z-index: 9999999999; background-color: #e8ca6f;"><i class="fa fa-arrow-left" style="color: white;" aria-hidden="true"></i></button>
+    </div>
+    
+    <section id="map1" class="map section-padding">
+      <div class="text-center">
+        <h3>Houppa + Soirée</h3>
+        <h5>Jeudi 26 septembre 2024</h5>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5245.229268431461!2d2.422550176494373!3d48.90368099751809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66cfae9510615%3A0x3580c52ec55ab7eb!2s58%20Rue%20Bernard%2C%2093000%20Bobigny!5e0!3m2!1sfr!2sfr!4v1717930807718!5m2!1sfr!2sfr" style="width: 90vw;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="map-content-wrapper1" class="container pointer-events-none">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            <div class="text-center">
+              <div
+                id="btn-show-content1"
+                class="toggle-map-content pointer-events-auto"
+              >
+                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Voir les infos
+              </div>
+            </div>
+            <div id="map-content1" class="pointer-events-auto">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>L'Orangerie du manoir des Vignes</h5>
+                  <p>58 rue Bernard, 93000 BOBIGNY</p>
+                </div>
+                <div class="col-md-6 mb-5"></div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-6" style="padding: 5px">
+                  <a
+                    class="btn btn-fill btn-small"
+                    href="https://www.waze.com/fr/live-map/directions/fr/idf/bobigny/58-rue-bernard?to=place.ChIJFQZR6fps5kcR67daxS7FgDU"
+                    ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                  >
+                </div>
+                <div class="col-md-6" style="padding: 5px">
+                  <a class="btn btn-accent btn-small" id="btn-show-map1"
+                    ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir la carte</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map2" class="map section-padding">
+      <div class="text-center">
+        <h3>Mairie</h3>
+        <h5>Lundi 23 septembre 2024</h5>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.896244156063!2d2.5138950764941503!3d48.898314497895996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e613ae0eb4c681%3A0x7363f75e0fd95588!2s121%20Av.%20de%20la%20R%C3%A9sistance%2C%2093340%20Le%20Raincy!5e0!3m2!1sfr!2sfr!4v1717931118370!5m2!1sfr!2sfr" style="width: 90vw;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="map-content-wrapper2" class="container pointer-events-none">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            <div class="text-center">
+              <div
+                id="btn-show-content2"
+                class="toggle-map-content pointer-events-auto"
+              >
+                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Voir les infos
+              </div>
+            </div>
+            <div id="map-content2" class="pointer-events-auto">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Mairie du Raincy</h5>
+                  <p>121 avenue de la resistance, 93340 LE RAINCY</p>
+                </div>
+                <div class="col-md-6 mb-5"></div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-6" style="padding: 5px">
+                  <a
+                    class="btn btn-fill btn-small"
+                    href="https://www.waze.com/fr/live-map/directions/fr/idf/le-raincy/121-av.-de-la-resistance?to=place.ChIJgca0Dq4T5kcRiFXZD173Y3M"
+                    ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                  >
+                </div>
+                <div class="col-md-6" style="padding: 5px">
+                  <a class="btn btn-accent btn-small" id="btn-show-map2"
+                    ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir la carte</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map2" class="map section-padding">
+      <div class="text-center">
+        <h3>Vin d'honneur</h3>
+        <h5>Lundi 23 septembre 2024</h5>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5244.281012862846!2d2.5210390900633928!3d48.91271522299254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e613be271bf063%3A0xffc233dd792f40d6!2s19%20All.%20la%20Fontaine%2C%2093190%20Livry-Gargan!5e0!3m2!1sfr!2sfr!4v1718216356579!5m2!1sfr!2sfr" style="width: 90vw;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="map-content-wrapper2" class="container pointer-events-none">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            <div class="text-center">
+              <div
+                id="btn-show-content2"
+                class="toggle-map-content pointer-events-auto"
+              >
+                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Voir les infos
+              </div>
+            </div>
+            <div id="map-content2" class="pointer-events-auto">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Vin d'honneur</h5>
+                  <p>19 All. la Fontaine, 93190 Livry-Gargan</p>
+                </div>
+                <div class="col-md-6 mb-5"></div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-6" style="padding: 5px">
+                  <a
+                    class="btn btn-fill btn-small"
+                    href="https://www.waze.com/fr/live-map/directions/fr/idf/livry-gargan/19-all.-la-fontaine?to=place.ChIJY_AbJ74T5kcR1kAved0zwv8"
+                    ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Waze</a
+                  >
+                </div>
+                <div class="col-md-6" style="padding: 5px">
+                  <a class="btn btn-accent btn-small" id="btn-show-map2"
+                    ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir la carte</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="js/vendor/jquery-1.11.2.min.js"
       onerror="loadJsFromCDN('jquery.js')"
@@ -364,7 +491,7 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/vendor/ouical.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/comptearebours.js"></script>
     <script
       async

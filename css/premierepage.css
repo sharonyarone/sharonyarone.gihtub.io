@@ -1,7 +1,9 @@
 #premierePage{
     display: flex;
-    background-image: url(../img/marbre.jpg);
-    background-repeat: round;
+    background-image: url(../img/fleurpremiere.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -16,11 +18,14 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+    border-radius: 3px;
     width: 80vw;
     height: 55vh;
     min-height: 400px;
 }
+
+
 .blocBlanc h1{
     color:black;
     font-size: 34px;

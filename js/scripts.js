@@ -568,3 +568,24 @@ var MD5 = function (string) {
             });
           
     });
+    function ouvrirItineraire(){
+        var elementCible = document.getElementById("deuxiemePage");
+        elementCible.style.display = "none";
+
+        var elementCible = document.getElementById("troisiemePage");
+        elementCible.style.display = "block";
+
+        window.scrollTo(0, 0);
+    }
+
+    document.getElementById("retourDeuxiemePage").addEventListener("click", function() {
+
+        var elementCible = document.getElementById("troisiemePage");
+        elementCible.style.display = "none";
+
+        var elementCible = document.getElementById("deuxiemePage");
+        elementCible.style.display = "block";
+    });
+
+
+    

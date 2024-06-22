@@ -308,6 +308,9 @@
     footer .footer-links {
         margin: 50px 0 50px 0;
     }
+    .fleur-card{
+        width: 30vw;
+      }
 
 }
 
