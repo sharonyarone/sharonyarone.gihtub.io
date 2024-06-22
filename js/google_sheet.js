@@ -20,12 +20,12 @@ const attendanceRadios = document.getElementsByName('attendance');
     $('#alert-wrapper').html(alert_markup('danger', '<strong>Oups!</strong>Vous avez oublié de renseigner l\'évènement auquel vous participez'));
     
   }else{
-    $('#alert-wrapper').html('<img class="loading" style="width:25vw;height:auto" src="img/loading.gif"></img>');
+    $('#alert-wrapper').html(alert_markup('info', '<strong class="loading">Juste un instant...<strong>'));
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
   .then(response => {
     $('.loading').css("display","none");
-    $('#alert-wrapper').html(alert_markup('info', '<strong>Super!</strong> On vous attend avec impatience ! '));
+    $('#alert-wrapper').html(alert_markup('success', '<strong>Super !</strong> On vous attend ! '));
     form.reset(); 
     })
   .catch(error => console.error('Error!', error.message))
